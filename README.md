@@ -6,7 +6,7 @@ I wrote this script in 2005 to calculate dS/dN ratios from first principles.
 It takes as input a file containing pair of aligned sequences in FASTA format.
 (The fasta can contain multiple such pairs: seq 1+2, 3+4, etc. will be analyzed.)
 
-This distro comes with the standard codon table EGC.0 provided (in 2005) in EMBOSS. If you need a different one, I'm sure you can find it [here](ftp://emboss.open-bio.org/pub/EMBOSS/EMBOSS-6.6.0.tar.gz) somewhere.
+This distro comes with the standard codon table EGC.0 provided (in 2005) in EMBOSS. If you need a different one, I'm sure you can find it in ftp://emboss.open-bio.org/pub/EMBOSS/EMBOSS-6.6.0.tar.gz somewhere.
 
 Put all the files in one directory and run it from there.
 
