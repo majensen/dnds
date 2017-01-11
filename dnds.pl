@@ -14,7 +14,7 @@ use Cdn;
 # options:
 # -t[nn] : desired codon table (emboss EGC.nn)
 # -M[c]  : calculation method-
-#          N[ei] | L[i-Wu-Luo] | P[amilo]
+#          N[ei] | L[i-Wu-Luo]
 # -R[f]  : transition/tranversion ratio (for -MN)
 
 
@@ -113,7 +113,6 @@ for $j (0..$i/2) {
     for ($opt_M) {
 	/N/ && do {$stats = nei($opt_R,\%C1,\%C2,\%M); last METHOD;};
 	/L/ && do {$stats = li(\%C1,\%C2,\%M); last METHOD;};
-	/P/ && do {$stats = pamilo(\%C1,\%C2,\%M); last METHOD;};
 	do { die "dnds: -M option '$opt_M' not recognized" };
     }
     # output stats for current pair here

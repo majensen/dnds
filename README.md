@@ -9,6 +9,19 @@ This distro comes with the standard codon table EGC.0 provided (in 2005) in EMBO
 
 Put all the files in one directory and run it from there.
 
+Do the following:
+```
+perl dnds.pl -t0 -MN test.fas
+```
+and you should get back
+```
+seq1    seq2    ds      dnv     dn      dsv
+>MG1655_m56_94; >SenLT2_v1_90773;       0.671179        3.87855e-05     0.0759739       0.00221391
+```
+
+You can choose between Nei-Gojobori (1986) and Li-Wu-Luo (1985) methods.
+
+
 ```
  perl dnds.pl [options] align.fas
  
@@ -20,7 +33,7 @@ Put all the files in one directory and run it from there.
  options:
  -t[nn] : desired codon table (emboss EGC.nn)
  -M[c]  : calculation method-
-          N[ei] | L[i-Wu-Luo] | P[amilo]
+          N[ei] | L[i-Wu-Luo]
  -R[f]  : transition/tranversion ratio (for -MN)
  ```
 
